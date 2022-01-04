@@ -1,4 +1,4 @@
-import requests
+import requests # pip install requests
 
 
 def matting_picup(api: str, token: str, inp_path: str, out_path: str):
@@ -25,8 +25,8 @@ def matting_picup(api: str, token: str, inp_path: str, out_path: str):
 
 if __name__ == '__main__':
     matting_picup(
-        api='http://restapi.picup.shop/webMatting/matting2',
-        token='90c4442bc30941eeb66137b842d4213b',
-        inp_path='test.jpg',
-        out_path='bgRemoved.png'
+        api='http://restapi.picup.shop/webMatting/matting2', # api接口地址
+        token='90c4442bc30941eeb66137b842d4213b', # 登录网站后获得的token
+        inp_path='2.jpg', # 输入待抠图图片的路径
+        out_path='bgRemoved3.png' # 输出背景去除图片的保存路径
     )
